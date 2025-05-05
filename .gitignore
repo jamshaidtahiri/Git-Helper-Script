@@ -1,36 +1,25 @@
-# Ignore everything
-*
-
-# Keep only these specific files
-!.gitignore
-!git_helper.py
-!README.md
-!build.bat
-
-# Keep the dist folder and its contents
-!dist/
-!dist/**
-
-# Python cache files
+# Python-related files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-
-# Virtual environments
-venv/
+*.so
+.Python
 env/
-ENV/
+build/
 
-# Logs
-*.log
+# Distribution files - except our exe
+*.egg-info/
+*.egg
 
 # IDE files
 .idea/
 .vscode/
 *.swp
-.DS_Store 
+.DS_Store
+
+# Except our key files
+!git_helper.py
+!README.md
+!build.bat
+!dist/
+!dist/** 
