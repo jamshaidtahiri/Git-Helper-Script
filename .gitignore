@@ -1,4 +1,23 @@
-# Python bytecode
+# Ignore everything
+*
+
+# But allow these specific files
+!.gitignore
+!git_helper.py
+!README.md
+!build.bat
+!build_exe.py
+!setup.py
+
+# Allow the executable
+!dist/
+!dist/GitHelper.exe
+
+# Ignore other files in dist/
+dist/*
+!dist/GitHelper.exe
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
