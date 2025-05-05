@@ -1,21 +1,15 @@
 # Ignore everything
 *
 
-# But allow these specific files
+# Keep only these specific files
 !.gitignore
 !git_helper.py
 !README.md
 !build.bat
-!build_exe.py
-!setup.py
 
-# Allow the executable
+# Keep the dist folder and its contents
 !dist/
-!dist/GitHelper.exe
-
-# Ignore other files in dist/
-dist/*
-!dist/GitHelper.exe
+!dist/**
 
 # Python cache files
 __pycache__/
